@@ -8,12 +8,12 @@ Get metrics of ECS Memory & CPU.
 - AWS Access key, Secret key and Region [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
 ### Usage 
-``./ecs_metric.py [-h] [--namespace NAMESPACE] [--metricname METRICNAME]
-                     [--clustername CLUSTERNAME] [--servicename SERVICENAME]
-                     [--period PERIOD] [--statistics STATISTICS] [--unit UNIT]
-                     [--ok_threshold OK_THRESHOLD]
-                     [--warning_threshold WARNING_THRESHOLD]
-                     [--critical_threshold CRITICAL_THRESHOLD]``
+```python
+./ecs_metric.py [-h] [--namespace NAMESPACE] [--metricname METRICNAME] [--clustername CLUSTERNAME]
+[--servicename SERVICENAME] [--period PERIOD] [--statistics STATISTICS]
+[--unit UNIT] [--ok_threshold OK_THRESHOLD] [--warning_threshold WARNING_THRESHOLD]
+[--critical_threshold CRITICAL_THRESHOLD]
+```
 
 ### Arguments  
 
