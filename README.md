@@ -1,6 +1,6 @@
 ## ecs_metric.py
 ### Objective 
-Get metrics of ECS Memory & CPU.
+Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
 
 ### Prerequisites 
 - Python3
