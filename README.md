@@ -4,6 +4,7 @@ Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
 
 ### Prerequisites 
 - Python3
+- boto3 extention (using: pip install boto3)
 - AWS cli [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 - AWS Access key, Secret key and Region [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
