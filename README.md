@@ -1,6 +1,7 @@
 ## ecs_metric.py
 ### Objective 
-Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
+- Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
+- This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/ECS-cluster-and-service-monitor/details).
 
 ### Prerequisites 
 - Python3
