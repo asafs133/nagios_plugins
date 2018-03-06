@@ -67,14 +67,14 @@ for val in response['Datapoints']:
     Var_Result = float(val[AWS_Statistics])
 
 if Var_Result < OK_Status:
-        print("OK - %s = %s." % (AWS_MetricName, Var_Result))
+        print("OK - %s = %s" % (AWS_MetricName, Var_Result))
         sys.exit(0)
 elif Var_Result >= Warning_Status and Var_Result < Warning_Status+10:
-        print("WARNING - %s = %s." % (AWS_MetricName, Var_Result))
+        print("WARNING - %s = %s" % (AWS_MetricName, Var_Result))
         sys.exit(1)
 elif Var_Result >= Critical_Status:
-        print("CRITICAL - %s = %s." % (AWS_MetricName, Var_Result))
+        print("CRITICAL - %s = %s" % (AWS_MetricName, Var_Result))
         sys.exit(2)
 else:
-        print("UKNOWN - %s = %s." % (AWS_MetricName, Var_Result))
+        print("UKNOWN - %s = %s" % (AWS_MetricName, Var_Result))
         sys.exit(3)
