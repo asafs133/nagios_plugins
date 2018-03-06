@@ -42,10 +42,10 @@ Each statistic has a unit of measure.
 For example: Count  
 
 `--ok_threshold OK_THRESHOLD`  
-Threshold which reflects the OK status value.  
+Threshold which reflects the OK status value. (Recommended threshold: 0)
 
 `--critical_threshold CRITICAL_THRESHOLD`  
-Threshold which reflects the Critical status value.
+Threshold which reflects the Critical status value. (Recommended threshold: 1)
 
 
 ## ecs_metric.py
@@ -93,10 +93,10 @@ Each statistic has a unit of measure.
 For example: Percent  
 
 `--ok_threshold OK_THRESHOLD`  
-Threshold which reflects the OK status value.  
+Threshold which reflects the OK status value. (Recommended threshold: 80)
 
 `--warning_threshold WARNING_THRESHOLD`  
-Threshold which reflects the Warning status value.  
+Threshold which reflects the Warning status value. (Recommended threshold: 80)
 
 `--critical_threshold CRITICAL_THRESHOLD`  
-Threshold which reflects the Critical status value.
+Threshold which reflects the Critical status value. (Recommended threshold: 90)
