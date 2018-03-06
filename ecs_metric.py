@@ -64,7 +64,7 @@ response = client.get_metric_statistics(
 )
 
 for val in response['Datapoints']:
-    Var_Result = float(val['Average'])
+    Var_Result = float(val[AWS_Statistics])
 
 if Var_Result < OK_Status:
         print("OK - %s = %s." % (AWS_MetricName, Var_Result))
