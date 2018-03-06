@@ -1,14 +1,14 @@
 # Nagios plugins
 
-## alb_unhealthyCheck.py
-### Objective 
-- Get metric of [AWS ALB](https://aws.amazon.com/elasticloadbalancing/details/#details) UnHealthyHostCount.
-
 ### Prerequisites 
 - Python3
 - boto3 extention (using: pip install boto3)
 - AWS cli [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 - AWS Access key, Secret key and Region [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+
+## alb_unhealthyCheck.py
+### Objective 
+- Get metric of [AWS ALB](https://aws.amazon.com/elasticloadbalancing/details/#details) UnHealthyHostCount.
 
 ### Usage 
 ```
@@ -52,12 +52,6 @@ Threshold which reflects the Critical status value.
 ### Objective 
 - Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
 - This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/ECS-cluster-and-service-monitor/details).
-
-### Prerequisites 
-- Python3
-- boto3 extention (using: pip install boto3)
-- AWS cli [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
-- AWS Access key, Secret key and Region [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
 ### Usage 
 ```
