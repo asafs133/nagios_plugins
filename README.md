@@ -12,7 +12,7 @@
 
 ### Usage 
 ```
-./alb_unhealthyCheck.py [-h] [--loadbalancer LOADBALANCER] [--period PERIOD] [--statistics STATISTICS]
+./clb_unhealthyCheck.py [-h] [--loadbalancer LOADBALANCER] [--period PERIOD] [--statistics STATISTICS]
                      [--unit UNIT] [--ok_threshold OK_THRESHOLD] [--critical_threshold CRITICAL_THRESHOLD]
 ```
 
