@@ -12,7 +12,7 @@
 
 ### Usage 
 ```
-./ecs_metric.py [-h] [--targetgroup TARGETGROUP] [--loadbalancer LOADBALANCER] [--period PERIOD] [--statistics STATISTICS]
+./alb_unhealthyCheck.py [-h] [--targetgroup TARGETGROUP] [--loadbalancer LOADBALANCER] [--period PERIOD] [--statistics STATISTICS]
                      [--unit UNIT] [--ok_threshold OK_THRESHOLD] [--critical_threshold CRITICAL_THRESHOLD]
 ```
 
