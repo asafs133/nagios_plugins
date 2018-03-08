@@ -48,8 +48,6 @@ response = client.get_metric_statistics(
     Unit=AWS_Unit
 )
 
-print(response)
-
 for val in response['Datapoints']:
     Var_Result = float(val[AWS_Statistics])
 
