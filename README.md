@@ -47,6 +47,7 @@ Threshold which reflects the Critical status value. (Recommended threshold: 1)
 ## alb_unhealthyCheck.py
 ### Objective 
 - Get metric of [AWS ALB](https://aws.amazon.com/elasticloadbalancing/details/#details) UnHealthyHostCount.
+- This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/AWS-Application-Load-Balancer-unhealthy-check/details).
 
 ### Usage 
 ```
