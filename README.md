@@ -9,6 +9,7 @@
 ## clb_unhealthyCheck.py
 ### Objective 
 - Get metric of [AWS CLB](https://aws.amazon.com/elasticloadbalancing/details/#details) UnHealthyHostCount.
+- This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/AWS-Classic-Load-Balancer-unhealthy-check/details).
 
 ### Usage 
 ```
