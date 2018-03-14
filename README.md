@@ -24,10 +24,10 @@
 Classic Load Balancer provides basic load balancing across multiple Amazon EC2 instances and operates at both the request level and connection level.
 
 `--ok_threshold OK_THRESHOLD`  
-Threshold which reflects the OK status value. (Recommended threshold: 0)
+Threshold which reflects the OK status value. (For Example: 2)
 
 `--critical_threshold CRITICAL_THRESHOLD`  
-Threshold which reflects the Critical status value. (Recommended threshold: 1)
+Threshold which reflects the Critical status value. (For Example: 2)
 
 
 ## clb_unhealthyCheck.py
