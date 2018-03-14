@@ -59,5 +59,5 @@ elif Var_Result >= Critical_Status:
         print("CRITICAL - %s = %s" % ('UnHealthyHostCount', Var_Result))
         sys.exit(2)
 else:
-        print("UKNOWN - %s = %s" % ('UnHealthyHostCount', Var_Result))
+        print("UNKNOWN - %s = %s" % ('UnHealthyHostCount', Var_Result))
         sys.exit(3)
