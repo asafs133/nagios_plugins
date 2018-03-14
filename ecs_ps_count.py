@@ -31,5 +31,5 @@ elif ContainerCounter < Critical_Status:
     print("CRITICAL - %s contains %s containers alive!" % (AWS_ClusterName, ContainerCounter))
     sys.exit(2)
 else:
-    print("UKNOWN - %s contains %s containers alive!" % (AWS_ClusterName, ContainerCounter))
+    print("UNKNOWN - %s contains %s containers alive!" % (AWS_ClusterName, ContainerCounter))
     sys.exit(3)
