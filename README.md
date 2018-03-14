@@ -8,7 +8,7 @@
 
 ## ecs_ps_count.py
 ### Objective 
-- Get runnig containers counter of ECS Cluster.
+- Get running containers counter of ECS Cluster.
 
 ### Usage 
 ```
