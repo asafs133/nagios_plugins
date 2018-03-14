@@ -6,7 +6,8 @@
 - AWS cli [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 - AWS Access key, Secret key and Region [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
-## ecs_ps_count.py
+## AWS ECS Cluster conatiners counter
+### ecs_ps_count.py
 ### Objective 
 - Get running containers counter of ECS Cluster.
 
@@ -29,8 +30,8 @@ Threshold which reflects the OK status value. (For Example: 2)
 `--critical_threshold CRITICAL_THRESHOLD`  
 Threshold which reflects the Critical status value. (For Example: 2)
 
-
-## clb_unhealthyCheck.py
+## AWS Classic Load Balancer unhealthy check
+### clb_unhealthyCheck.py
 ### Objective 
 - Get metric of [AWS CLB](https://aws.amazon.com/elasticloadbalancing/details/#details) UnHealthyHostCount.
 - This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/AWS-Classic-Load-Balancer-unhealthy-check/details).
@@ -68,8 +69,8 @@ Threshold which reflects the OK status value. (Recommended threshold: 0)
 `--critical_threshold CRITICAL_THRESHOLD`  
 Threshold which reflects the Critical status value. (Recommended threshold: 1)
 
-
-## alb_unhealthyCheck.py
+## AWS Application Load Balancer unhealthy check
+### alb_unhealthyCheck.py
 ### Objective 
 - Get metric of [AWS ALB](https://aws.amazon.com/elasticloadbalancing/details/#details) UnHealthyHostCount.
 - This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/AWS-Application-Load-Balancer-unhealthy-check/details).
@@ -111,8 +112,8 @@ Threshold which reflects the OK status value. (Recommended threshold: 0)
 `--critical_threshold CRITICAL_THRESHOLD`  
 Threshold which reflects the Critical status value. (Recommended threshold: 1)
 
-
-## ecs_metric.py
+## AWS ECS cluster and service monitor
+### ecs_metric.py
 ### Objective 
 - Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
 - This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/ECS-cluster-and-service-monitor/details).
