@@ -6,6 +6,30 @@
 - AWS cli [installed](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
 - AWS Access key, Secret key and Region [configured](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
 
+## ecs_ps_count.py
+### Objective 
+- Get runnig containers counter of ECS Cluster.
+
+### Usage 
+```
+./ecs_ps_count.py [-h] [--clustername CLUSTERNAME] [--ok_threshold OK_THRESHOLD] [--critical_threshold CRITICAL_THRESHOLD]
+```
+
+### Arguments  
+
+`-h, --help`  
+  Show this help message and exit  
+  
+`--clustername CLUSTERNAME`  
+Classic Load Balancer provides basic load balancing across multiple Amazon EC2 instances and operates at both the request level and connection level.
+
+`--ok_threshold OK_THRESHOLD`  
+Threshold which reflects the OK status value. (Recommended threshold: 0)
+
+`--critical_threshold CRITICAL_THRESHOLD`  
+Threshold which reflects the Critical status value. (Recommended threshold: 1)
+
+
 ## clb_unhealthyCheck.py
 ### Objective 
 - Get metric of [AWS CLB](https://aws.amazon.com/elasticloadbalancing/details/#details) UnHealthyHostCount.
