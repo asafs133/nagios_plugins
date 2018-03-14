@@ -77,5 +77,5 @@ elif Var_Result >= Critical_Status:
         print("CRITICAL - %s = %s" % (AWS_MetricName, Var_Result))
         sys.exit(2)
 else:
-        print("UKNOWN - %s = %s" % (AWS_MetricName, Var_Result))
+        print("UNKNOWN - %s = %s" % (AWS_MetricName, Var_Result))
         sys.exit(3)
