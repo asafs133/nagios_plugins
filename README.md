@@ -67,7 +67,7 @@ For example: Count
 Threshold which reflects the OK status value. (Recommended threshold: 0)
 
 `--critical_threshold CRITICAL_THRESHOLD`  
-Threshold which reflects the Critical status value. (Recommended threshold: 1)
+Threshold which reflects the Critical status value. (Recommended threshold: 0)
 
 ## AWS Application Load Balancer unhealthy check
 ### alb_unhealthyCheck.py
@@ -110,7 +110,7 @@ For example: Count
 Threshold which reflects the OK status value. (Recommended threshold: 0)
 
 `--critical_threshold CRITICAL_THRESHOLD`  
-Threshold which reflects the Critical status value. (Recommended threshold: 1)
+Threshold which reflects the Critical status value. (Recommended threshold: 0)
 
 ## AWS ECS service monitor
 ### ecs_service_memory_cpu.py
