@@ -112,15 +112,15 @@ Threshold which reflects the OK status value. (Recommended threshold: 0)
 `--critical_threshold CRITICAL_THRESHOLD`  
 Threshold which reflects the Critical status value. (Recommended threshold: 1)
 
-## AWS ECS cluster and service monitor
-### ecs_metric.py
+## AWS ECS service monitor
+### ecs_service_memory_cpu.py
 ### Objective 
 - Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
 - This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/ECS-cluster-and-service-monitor/details).
 
 ### Usage 
 ```
-./ecs_metric.py [-h] [--namespace NAMESPACE] [--metricname METRICNAME] [--clustername CLUSTERNAME]
+./ecs_service_memory_cpu.py [-h] [--namespace NAMESPACE] [--metricname METRICNAME] [--clustername CLUSTERNAME]
                      [--servicename SERVICENAME] [--period PERIOD] [--statistics STATISTICS]
                      [--unit UNIT] [--ok_threshold OK_THRESHOLD] [--warning_threshold WARNING_THRESHOLD]
                      [--critical_threshold CRITICAL_THRESHOLD]
@@ -158,10 +158,60 @@ Each statistic has a unit of measure.
 For example: Percent  
 
 `--ok_threshold OK_THRESHOLD`  
-Threshold which reflects the OK status value. (Recommended threshold: 80)
+Threshold which reflects the OK status value. (Recommended threshold: 86)
 
 `--warning_threshold WARNING_THRESHOLD`  
-Threshold which reflects the Warning status value. (Recommended threshold: 80)
+Threshold which reflects the Warning status value. (Recommended threshold: 86)
 
 `--critical_threshold CRITICAL_THRESHOLD`  
-Threshold which reflects the Critical status value. (Recommended threshold: 90)
+Threshold which reflects the Critical status value. (Recommended threshold: 96)
+
+## AWS ECS cluster monitor
+### ecs_cluster_memory_cpu.py
+### Objective 
+- Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
+
+### Usage 
+```
+./ecs_cluster_memory_cpu.py [-h] [--namespace NAMESPACE] [--metricname METRICNAME] [--clustername CLUSTERNAME]
+                     [--servicename SERVICENAME] [--period PERIOD] [--statistics STATISTICS]
+                     [--unit UNIT] [--ok_threshold OK_THRESHOLD] [--warning_threshold WARNING_THRESHOLD]
+                     [--critical_threshold CRITICAL_THRESHOLD]
+```
+
+### Arguments  
+
+`-h, --help`  
+  Show this help message and exit  
+  
+`--namespace NAMESPACE`  
+CloudWatch namespaces are containers for metrics.  
+For example: AWS/ECS  
+
+`--metricname METRICNAME`  
+Metrics are data about the performance of your systems.  
+For example: MemoryUtilization  
+
+`--clustername CLUSTERNAME`  
+This dimension filters the data you request for all resources in a specified cluster.
+          
+`--period PERIOD `  
+A period is the length of time associated with a specific Amazon CloudWatch statistic.  
+For example: to specify a period of 5 minutes, use 300 as the period value.  
+                        
+`--statistics STATISTICS`  
+Statistics are metric data aggregations over specified periods of time.  
+For example: Average  
+                        
+`--unit UNIT`  
+Each statistic has a unit of measure.  
+For example: Percent  
+
+`--ok_threshold OK_THRESHOLD`  
+Threshold which reflects the OK status value. (Recommended threshold: 70)
+
+`--warning_threshold WARNING_THRESHOLD`  
+Threshold which reflects the Warning status value. (Recommended threshold: 70)
+
+`--critical_threshold CRITICAL_THRESHOLD`  
+Threshold which reflects the Critical status value. (Recommended threshold: 80)
