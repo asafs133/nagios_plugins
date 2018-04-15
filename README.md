@@ -115,7 +115,7 @@ Threshold which reflects the Critical status value. (Recommended threshold: 1)
 ## AWS ECS service monitor
 ### ecs_service_memory_cpu.py
 ### Objective 
-- Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
+- Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) service Memory & CPU.
 - This plugin exist & approved by [Nagios Exchange](https://exchange.nagios.org/directory/Plugins/Cloud/ECS-cluster-and-service-monitor/details).
 
 ### Usage 
@@ -169,7 +169,7 @@ Threshold which reflects the Critical status value. (Recommended threshold: 96)
 ## AWS ECS cluster monitor
 ### ecs_cluster_memory_cpu.py
 ### Objective 
-- Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) Memory & CPU.
+- Get metrics of [AWS ECS](https://aws.amazon.com/ecs/) cluster Memory & CPU.
 
 ### Usage 
 ```
