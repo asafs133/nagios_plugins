@@ -55,7 +55,7 @@ for val in response['Datapoints']:
 if Var_Result == OK_Status:
         print("OK - %s = %s" % ('UnHealthyHostCount', Var_Result))
         sys.exit(0)
-elif Var_Result >= Critical_Status:
+elif Var_Result > Critical_Status:
         print("CRITICAL - %s = %s" % ('UnHealthyHostCount', Var_Result))
         sys.exit(2)
 else:
