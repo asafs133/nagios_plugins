@@ -24,6 +24,8 @@ parser.add_argument('--warning_threshold', action='store', dest='warning_thresho
                     help='Threshold which reflects the Warning status value.')
 parser.add_argument('--critical_threshold', action='store', dest='critical_threshold', type=float,
                     help='Threshold which reflects the Critical status value.')
+parser.add_argument('--region', action='store', dest='region',
+                    help='This dimension filters the data you request for all resources in a specified region. For example: us-east-1')
 
 args_res = parser.parse_args()
 
@@ -32,6 +34,7 @@ args_res = parser.parse_args()
 AWS_Namespace = args_res.namespace
 AWS_MetricName = args_res.metricname
 AWS_ClusterName = args_res.clustername
+AWS_RegionName = args_res.region
 AWS_Period = args_res.period
 AWS_Statistics = args_res.statistics
 AWS_Unit = args_res.unit
@@ -39,7 +42,7 @@ OK_Status = args_res.ok_threshold
 Warning_Status = args_res.warning_threshold
 Critical_Status = args_res.critical_threshold
 
-client = boto3.client('cloudwatch')
+client = boto3.client('cloudwatch', region_name=AWS_RegionName)
 
 response = client.get_metric_statistics(
     Namespace=AWS_Namespace,
